@@ -1,0 +1,22 @@
+name = "rag"
+main = "src/index.js"
+compatibility_date = "2024-10-28"
+
+[ai]
+binding = "AI"
+
+[vars]
+ENABLE_TEXT_SPLITTING = true
+
+[[d1_databases]]
+binding = "DATABASE"
+database_name = "rag"        
+database_id = "a1a2799a-483b-4a41-acb8-399a5955eb04" 
+
+[[vectorize]]
+binding = "VECTOR_INDEX"
+index_name = "rag"
+
+[observability]
+enabled = true
+head_sampling_rate = 1 # optional. default = 1.
